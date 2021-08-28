@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:todo_ui/Screens/AddTask.dart';
 import 'package:todo_ui/Utils/AppColors.dart';
 import 'package:todo_ui/Widgets/DrawerMenu.dart';
 
+//side navigation bar
 class SideNavDrawer extends StatefulWidget {
   @override
   _SideNavDrawerState createState() => _SideNavDrawerState();
@@ -52,7 +54,9 @@ class _SideNavDrawerState extends State<SideNavDrawer> {
           DrawerMenu(
             text: "New Task",
             prefixIcon: Icons.add,
-            onpress: () {},
+            onpress: () {
+              Navigator.of(context).pushNamed(AddTask.routeName);
+            },
           ),
           DrawerMenu(
             text: 'Logout',

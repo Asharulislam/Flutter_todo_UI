@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:todo_ui/Screens/AddTask.dart';
 import 'package:todo_ui/Widgets/Appbar.dart';
 import 'package:todo_ui/Widgets/SideNavDrawer.dart';
 
@@ -15,7 +16,9 @@ class HomePage extends StatelessWidget {
         child: TopAppBar(
           text: "ThingsTOD",
           icon: Icons.add,
-          onpress: () {},
+          onpress: () {
+            Navigator.of(context).pushNamed(AddTask.routeName);
+          },
         ),
       ),
     );

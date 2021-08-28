@@ -10,8 +10,8 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 45,
-      width: 340,
+      height: MediaQuery.of(context).size.height*0.065,
+      width: double.infinity,
       child: TextButton(
         child: Text(text,style: TextStyle(
           color: Colors.white
