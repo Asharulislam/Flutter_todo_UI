@@ -1,5 +1,7 @@
 # todo_ui
 
+![Alt Text](todo.gif)
+
 A new Flutter project.
 
 ## Getting Started
