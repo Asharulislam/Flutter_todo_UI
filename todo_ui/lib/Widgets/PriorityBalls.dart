@@ -9,12 +9,11 @@ class PriorityBall extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 25,
-      width: 25,
+      height: 20,
+      width: 20,
       decoration: BoxDecoration(
         color: colour,
         shape: BoxShape.circle,
-        // border: Border.all(width: 1, color: Colors.red)
       ),
     );
   }
